@@ -1,2 +1,2 @@
-# xml_project
+# XML Project
 XML to HTML Converter
