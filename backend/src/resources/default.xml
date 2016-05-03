@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="petsstore.xsl"?>
+<!--Author: Vinaya Bhattarai 1305900-->
+
+<!DOCTYPE petsstore
+
+        [
+                <!ELEMENT petsstore (animal*)>
+                <!ELEMENT animal (name*, species*, sex?, breed?, type?,details*,makeyours)>
+
+                <!ELEMENT name (#PCDATA)>
+                <!ELEMENT species (#PCDATA)>
+                <!ELEMENT sex (#PCDATA)>
+                <!ELEMENT breed (#PCDATA)>
+                <!ELEMENT type (#PCDATA)>
+                <!ELEMENT details (#PCDATA)>
+                <!ELEMENT family (#PCDATA)>
+                <!ELEMENT makeyours (#PCDATA)>
+
+                <!ATTLIST animal class CDATA #IMPLIED>
+                <!ATTLIST name image CDATA #IMPLIED>
+
+                ]>
+
+<petsstore>
+    <animal>
+        <name image="img/sheepdog.jpg">Alger</name>
+        <species>Dog</species>
+        <sex>Female</sex>
+        <breed>Sheepdog</breed>
+        <type>Big</type>
+        <details>Long double coat</details>
+        <makeyours>
+            <a href="#">Wishlist</a>
+        </makeyours>
+    </animal>
+
+
+    <animal>
+        <name image="img/samoyed.jpg">Hedgehog</name>
+        <species>Dog</species>
+        <sex>Male</sex>
+        <breed>Samoyed</breed>
+        <type>Small and Medium</type>
+        <details>Non-aggressive and excellent watch dogs</details>
+        <makeyours><a href="#">Wishlist</a></makeyours>
+    </animal>
+
+    <animal>
+        <name image="img/rottweiler.jpg">Hero</name>
+        <species>Dog</species>
+        <sex>Male</sex>
+        <breed>Rottweiler</breed>
+        <type>Big</type>
+        <details>Primary as guide dogs and herding</details>
+        <makeyours><a href="#">Wishlist</a></makeyours>
+    </animal>
+    <animal>
+        <name image="img/japanese_spitz.jpg">Bubbles</name>
+        <species>Dog</species>
+        <sex>Female</sex>
+        <breed>Japanese Spitz</breed>
+        <type>Medium</type>
+        <details>Very friendly but a bit greedy</details>
+        <makeyours><a href="#">Wishlist</a></makeyours>
+    </animal>
+    <animal>
+        <name image="img/persian_cat.jpg">Crimson</name>
+        <species>Cat</species>
+        <sex>Female</sex>
+        <breed>Persian Cat</breed>
+        <type>Small</type>
+        <details>Also known as longhari or Persian Longhair</details>
+        <makeyours><a href="#">Wishlist</a></makeyours>
+    </animal>
+
+    <animal>
+        <name image="img/maine_coon.jpg">Herne</name>
+        <species>Cat</species>
+        <sex>Male</sex>
+        <breed>Maine Coon</breed>
+        <type>Medium</type>
+        <details>Commonly known as snowshoe cat</details>
+        <makeyours><a href="#">Wishlist</a></makeyours>
+    </animal>
+
+    <animal>
+        <name image="img/dutch.jpg">Alex</name>
+        <species>Rabbit</species>
+        <sex>Male</sex>
+        <breed>Dutch</breed>
+        <type>Medium</type>
+        <details>They are from England not from Netherlands</details>
+        <makeyours><a href="#">Wishlist</a></makeyours>
+    </animal>
+
+    <animal>
+        <name image="img/himalayan_rabbit.jpg">Astrid</name>
+        <species>Rabbit</species>
+        <sex>Female</sex>
+        <breed>Himalayan Rabbit</breed>
+        <type>Medium</type>
+        <details>One of the oldest and calmest breeds</details>
+        <makeyours><a href="#">Wishlist</a></makeyours>
+    </animal>
+
+</petsstore>
