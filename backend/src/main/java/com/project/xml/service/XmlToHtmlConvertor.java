@@ -2,7 +2,6 @@ package com.project.xml.service;
 
 import com.project.xml.utils.TransformerFactory;
 
-import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
@@ -57,10 +56,10 @@ public class XmlToHtmlConvertor {
         transformerFactory.setAttribute("indent-number", 4);
 
         try {
-            Transformer transformer = transformerFactory.newTransformer(new StreamSource("backend/src/resources/" + xslName));
+            Transformer transformer = transformerFactory.newTransformer(new StreamSource(xslName));
 
-            transformer.transform(new javax.xml.transform.stream.StreamSource("backend/src/resources/" + xmlName),
-                    new javax.xml.transform.stream.StreamResult(new FileOutputStream("backend/src/resources/" + htmlName)));
+            transformer.transform(new javax.xml.transform.stream.StreamSource(xmlName),
+                    new javax.xml.transform.stream.StreamResult(new FileOutputStream(htmlName)));
         } catch (TransformerConfigurationException e) {
             e.getMessage();
         } catch (FileNotFoundException e) {
