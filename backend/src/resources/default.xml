@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<!--Author: Vinaya Bhattarai 1305900-->
+
+<!DOCTYPE petshop[
+    <!ELEMENT petshop (animal*,food*)>
+    <!ELEMENT animal (name*, species*, sex?, breed?, type?,details*,makeyours)>
+    <!ELEMENT food (name+, price+, amount*, discount?, species*)>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT species (#PCDATA)>
+    <!ELEMENT sex (#PCDATA)>
+    <!ELEMENT breed (#PCDATA)>
+    <!ELEMENT type (#PCDATA)>
+    <!ELEMENT details (#PCDATA)>
+    <!ELEMENT family (#PCDATA)>
+    <!ELEMENT makeyours (#PCDATA)>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT discount (#PCDATA)>
+    <!ELEMENT species (#PCDATA)>
+
+    <!ATTLIST animal class CDATA #IMPLIED>
+    <!ATTLIST name image CDATA #IMPLIED>
+
+    <!ATTLIST price currency CDATA #IMPLIED>
+    <!ATTLIST amount unit CDATA #IMPLIED>
+    <!ATTLIST discount type CDATA #IMPLIED>
+
+]>
+
+<petshop>
+    <animal>
+        <name image="img/sheepdog.jpg">Alger</name>
+        <species>Dog</species>
+        <sex>Female</sex>
+        <breed>Sheepdog</breed>
+        <type>Big</type>
+        <details>Long double coat</details>
+    </animal>
+
+
+    <animal>
+        <name image="img/samoyed.jpg">Hedgehog</name>
+        <species>Dog</species>
+        <sex>Male</sex>
+        <breed>Samoyed</breed>
+        <type>Small and Medium</type>
+        <details>Non-aggressive and excellent watch dogs</details>
+    </animal>
+
+    <animal>
+        <name image="img/rottweiler.jpg">Hero</name>
+        <species>Dog</species>
+        <sex>Male</sex>
+        <breed>Rottweiler</breed>
+        <type>Big</type>
+        <details>Primary as guide dogs and herding</details>
+    </animal>
+    <animal>
+        <name image="img/japanese_spitz.jpg">Bubbles</name>
+        <species>Dog</species>
+        <sex>Female</sex>
+        <breed>Japanese Spitz</breed>
+        <type>Medium</type>
+        <details>Very friendly but a bit greedy</details>
+    </animal>
+    <animal>
+        <name image="img/persian_cat.jpg">Crimson</name>
+        <species>Cat</species>
+        <sex>Female</sex>
+        <breed>Persian Cat</breed>
+        <type>Small</type>
+        <details>Also known as longhari or Persian Longhair</details>
+    </animal>
+
+    <animal>
+        <name image="img/maine_coon.jpg">Herne</name>
+        <species>Cat</species>
+        <sex>Male</sex>
+        <breed>Maine Coon</breed>
+        <type>Medium</type>
+        <details>Commonly known as snowshoe cat</details>
+    </animal>
+
+    <animal>
+        <name image="img/dutch.jpg">Alex</name>
+        <species>Rabbit</species>
+        <sex>Male</sex>
+        <breed>Dutch</breed>
+        <type>Medium</type>
+        <details>They are from England not from Netherlands</details>
+    </animal>
+
+    <animal>
+        <name image="img/himalayan_rabbit.jpg">Astrid</name>
+        <species>Rabbit</species>
+        <sex>Female</sex>
+        <breed>Himalayan Rabbit</breed>
+        <type>Medium</type>
+        <details>One of the oldest and calmest breeds</details>
+    </animal>
+    <food>
+        <name image="">Dog Chews Baton Color</name>
+        <price currency="ron">142</price>
+        <amount unit="buc">150</amount>
+        <discount>0</discount>
+        <species>Dog</species>
+    </food>
+    <food>
+        <name image="">Pedigree Vita&amp;Pasare</name>
+        <price currency="ron">111</price>
+        <amount unit="kg">15</amount>
+        <discount>0</discount>
+        <species>Dog</species>
+    </food>
+    <food>
+        <name image="">Natures Menu Curcan&amp;Pui</name>
+        <price currency="ron">7.99</price>
+        <amount unit="g">300</amount>
+        <discount>0</discount>
+        <species>Dog</species>
+    </food>
+    <food>
+        <name image="">Pedigree Dentastix Multi</name>
+        <price currency="ron">6.19</price>
+        <amount unit="g">110</amount>
+        <discount>0</discount>
+        <species>Dog</species>
+    </food>
+    <food>
+        <name image="">Cat Chow Curcan&amp;Pui</name>
+        <price currency="ron">148.36</price>
+        <amount unit="kg">15</amount>
+        <discount type="percent">10</discount>
+        <species>Cat</species>
+    </food>
+    <food>
+        <name image="">Hrana pisici Whiskas cu Iepure</name>
+        <price currency="ron">1.99</price>
+        <amount unit="g">100</amount>
+        <discount>0</discount>
+        <species>Cat</species>
+    </food>
+    <food>
+        <name image="">Royal Canin Sterilized</name>
+        <price currency="ron">3.49</price>
+        <amount unit="g">85</amount>
+        <discount type="percent">5</discount>
+        <species>Cat</species>
+    </food>
+    <food>
+        <name image="">Cunipic Iepure</name>
+        <price currency="ron">34.99</price>
+        <amount unit="kg">3</amount>
+        <discount type="price">5</discount>
+        <species>Rabbit</species>
+    </food>
+    <food>
+        <name image="">Wellness Iepuri</name>
+        <price currency="ron">18.49</price>
+        <amount unit="kg">1</amount>
+        <discount>0</discount>
+        <species>Rabbit</species>
+    </food>
+</petshop>
