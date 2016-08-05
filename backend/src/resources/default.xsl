@@ -3,20 +3,16 @@
     <xsl:output method="html" indent="yes"/>
     <xsl:template match="/">
 
-        <!--Author: Vinaya Bhattarai 1305900-->
-
         <html>
             <head>
-                <title>Welcome to Pets store</title>
-                <!--<link rel="stylesheet" type="text/css" href="css.css"/>-->
+                <title>Welcome to Pets shop</title>
                 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bree+Serif"/>
                 <style>body {font-family: 'Bree Serif', serif;}</style>
             </head>
             <body>
 
                 <div class      ="headline">
-                    <h1>Welcome to Pets Store</h1>
-                    <h2>Please select your next family member</h2>
+                    <h1>Welcome to Pets shop</h1>
                 </div>
                 <div class      ="offer">
                 </div>
